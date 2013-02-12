@@ -1,4 +1,4 @@
-#!/usr/bin/env octave
+#!/usr/bin/env octave -q
 ## catenary_no_EI.m
 ## octave script to calculate assymetric catenary line without elasticity  
 ## uniform weight per length - one type of cable
