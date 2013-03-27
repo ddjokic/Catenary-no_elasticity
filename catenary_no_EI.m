@@ -5,12 +5,12 @@
 
 ## input block - all units in meters and kg or use other consistent units
 L=input ("Horizontal Distance between supports in meters: ");
-S=input ("Catenary length in meters - must be greater than streight line distance: ");
+S=input ("Hanging Cable length in meters - must be greater than distance between supports: ");
 d=input ("Vertical Distance Between supports in meters: ");
 w=input ("Unit Weight of Catenary line in kg/m: ");
 za=input ("Elevation of higher support (A) from reference plane in meters: ");
 ## end of input block
-## equotion to calculate initial value of 'a'
+## equation to calculate initial value of 'a'
 ## a*sinh(L/(2*a)+atanh(d/S))+a*sinh(L/(2*a)-atanh(d/S))-S=0
 ## 'a' to be solved by fzero
 catFun=@(a) a*sinh(L/(2*a)+atanh(d/S))+a*sinh(L/(2*a)-atanh(d/S))-S;
