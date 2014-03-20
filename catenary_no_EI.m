@@ -63,7 +63,7 @@ fid=fopen("catenary_res.txt", "a");
 fprintf (fid, "\nHorizontal Distance between supports in meters: %f", L);
 fprintf (fid, "\nCatenary length in meters: %f", S);
 fprintf (fid, "\nVertical Distance Between supports in meters: %f", d);
-fprintf (fid, "\nUnit Weight of Catenary line in kg/m: ", w);
+fprintf (fid, "\nUnit Weight of Catenary line in kg/m: %f", w);
 fprintf (fid, "\nElevation of higher support (A) from reference plane in meters: %f", za);
 fprintf (fid, "\nCatenary coef.: %f", a);
 fprintf (fid, "\nHorizontal tension in kg (constant along line: %f", H);
